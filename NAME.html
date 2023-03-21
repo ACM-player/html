@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>随机抽选人名</title>
+</head>
+<body>
+    <h1>随机抽选人名</h1>
+    <button onclick="chooseName()">抽选人名</button>
+    <p id="result"></p>
+
+    <script type="text/javascript">
+        let names = ["石佩龙", "罗凯", "钟麟轩", "任重远","朱童欣","郝梦馨","王梓烨","艾飞洋","党君豪","戴渲芮","木拉力"];
+        function chooseName() {
+            let index = Math.floor(Math.random() * names.length);
+            document.getElementById("result").innerHTML = names[index];
+        }
+    </script>
+</body>
+</html>
